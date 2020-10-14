@@ -12,6 +12,16 @@
     <arg name="debug" value="false" />
   </include>
 
+  <node name="lidar_front_frame" pkg="tf" type="static_transform_publisher"
+        args="0.38516904756 0.28066904756 0.11
+              0.78539816339 0.0 3.14159265359
+              /map /front_frame 100" />
+
+  <node name="lidar_back_frame" pkg="tf" type="static_transform_publisher"
+        args="-0.38616904756 -0.28066904756 0.11
+              3.92699081699 0.0 3.14159265359
+              /map /back_frame 100" />
+
   <param name="robot_description" command="$(find xacro)/xacro.py $(find timda_description)/urdf/timda_mobile_platform.urdf.xacro" />
   <node name="spawn_model"
         pkg="gazebo_ros"
