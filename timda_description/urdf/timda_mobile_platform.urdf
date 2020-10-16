@@ -2,21 +2,23 @@
 <!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
      Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
      For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
-<robot name="timda_mobile_platform">
-  <link name="base_link">
+<robot
+  name="timda_mobile">
+  <link
+    name="base_link">
     <inertial>
       <origin
-        xyz="-0.075595 -4.8123E-06 0.13958"
+        xyz="-0.03475 -0.00014056 0.15811"
         rpy="0 0 0" />
       <mass
-        value="50" />
+        value="31.314" />
       <inertia
-        ixx="0.13635"
-        ixy="-0.00051122"
-        ixz="-6.0686E-05"
-        iyy="0.11712"
-        iyz="2.0569E-05"
-        izz="0.22093" />
+        ixx="0.29031"
+        ixy="-0.0013778"
+        ixz="-0.00016386"
+        iyy="0.25069"
+        iyz="5.56E-05"
+        izz="0.48464" />
     </inertial>
     <visual>
       <origin
@@ -24,11 +26,12 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://timda_description/meshes/base_link.STL" />
+          filename="package://timda_mobile/meshes/base_link.STL" />
       </geometry>
       <material
         name="">
-        <color rgba="0.75294 0.75294 0.75294 1" />
+        <color
+          rgba="0.75294 0.75294 0.75294 1" />
       </material>
     </visual>
     <collision>
@@ -37,7 +40,7 @@
         rpy="0 0 0" />
       <geometry>
         <mesh
-          filename="package://timda_description/meshes/base_link.STL" />
+          filename="package://timda_mobile/meshes/base_link.STL" />
       </geometry>
     </collision>
   </link>

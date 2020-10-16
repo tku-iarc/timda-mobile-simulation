@@ -4,8 +4,7 @@
   <arg name="z_pos" default="0.0" />
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="physics" value="dart" />
-    <!-- <arg name="world_name" value="$(find timda_gazebo)/worlds/home-area.world" /> -->
+    <arg name="world_name" value="$(find timda_gazebo)/worlds/home-area.world" />
     <arg name="paused" value="false" />
     <!-- <arg name="use_sim_time" value="0.1" /> -->
     <arg name="use_sim_time" value="true" />
