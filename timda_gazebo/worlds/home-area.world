@@ -14,6 +14,7 @@
       </sky>
     </scene>
 
+    <!-- Engines: ode, bullet, simbody, dart-->
     <physics type="ode">
       <max_step_size>0.001</max_step_size>
       <real_time_factor>1</real_time_factor>
