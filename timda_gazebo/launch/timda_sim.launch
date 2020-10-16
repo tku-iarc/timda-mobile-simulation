@@ -6,10 +6,12 @@
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(find timda_gazebo)/worlds/home-area.world" />
     <arg name="paused" value="false" />
-    <arg name="use_sim_time" value="0.1" />
+    <!-- <arg name="use_sim_time" value="0.1" /> -->
+    <arg name="use_sim_time" value="true" />
     <arg name="gui" value="true" />
     <arg name="headless" value="false" />
     <arg name="debug" value="false" />
+    <!-- <remap from="tf" to="gazebo_tf" /> -->
   </include>
 
   <param name="robot_description" command="$(find xacro)/xacro.py $(find timda_description)/urdf/timda_mobile_platform.urdf.xacro" />
@@ -22,6 +24,9 @@
               -z $(arg z_pos)
               -param robot_description"
         output="screen" />
+
+  <!-- <node pkg="tf" type="static_transform_publisher" name="map_to_odom" 
+        args="0.0 0.0 0.0 0 0 0.0 /map /odom 40" /> -->
 
   <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
     <param name="publish_frequency" type="double" value="30.0" />
