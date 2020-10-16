@@ -5,7 +5,7 @@ Panels:
     Property Tree Widget:
       Expanded:
         - /Global Options1
-        - /RobotModel1/Links1
+        - /RobotModel1
       Splitter Ratio: 0.3069705069065094
     Tree Height: 726
   - Class: rviz/Selection
@@ -259,6 +259,22 @@ Visualization Manager:
       Topic: /odom
       Unreliable: false
       Value: false
+    - Alpha: 1
+      Arrow Length: 0.30000001192092896
+      Axes Length: 0.30000001192092896
+      Axes Radius: 0.009999999776482582
+      Class: rviz/PoseArray
+      Color: 255; 25; 0
+      Enabled: true
+      Head Length: 0.07000000029802322
+      Head Radius: 0.029999999329447746
+      Name: PoseArray
+      Shaft Length: 0.23000000417232513
+      Shaft Radius: 0.009999999776482582
+      Shape: Arrow (Flat)
+      Topic: /particlecloud
+      Unreliable: false
+      Value: true
   Enabled: true
   Global Options:
     Background Color: 48; 48; 48
@@ -294,18 +310,18 @@ Visualization Manager:
         Swap Stereo Eyes: false
         Value: false
       Focal Point:
-        X: -1.999483346939087
-        Y: 0.5741820931434631
-        Z: 0.8907694816589355
+        X: 0.6712583303451538
+        Y: 0.7959765791893005
+        Z: 1.451177716255188
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.279796838760376
+      Pitch: 0.8547970652580261
       Target Frame: <Fixed Frame>
       Value: Orbit (rviz)
-      Yaw: 3.1217095851898193
+      Yaw: 2.366706132888794
     Saved: ~
 Window Geometry:
   Displays:
