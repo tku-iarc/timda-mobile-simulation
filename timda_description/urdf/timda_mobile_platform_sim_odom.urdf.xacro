@@ -5,6 +5,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="timda_mobile_platform">
   <xacro:property name="M_PI" value="3.14159265359" />
   <xacro:property name="M_PI_2" value="1.57079632679" />
+  <xacro:include filename="$(find timda_description)/urdf/timda_mobile_platform.gazebo.xacro" />
   <xacro:include filename="$(find hector_sensors_description)/urdf/hokuyo_utm30lx.urdf.xacro" />
 
   <xacro:hokuyo_utm30lx name="front_lidar" parent="base_link" ros_topic="laser_front"
@@ -18,6 +19,21 @@
                         min_angle="-135" max_angle="135">
     <origin xyz="-0.38616904756 -0.28066904756 0.11" rpy="${M_PI} 0 ${M_PI/4+M_PI}" />
   </xacro:hokuyo_utm30lx>
+
+  <link name="base_footprint">
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <box size="0.001 0.001 0.001" />
+      </geometry>
+    </visual>
+  </link>
+
+  <joint name="base_link_joint" type="fixed">
+    <origin xyz="0.0 0 0.05" rpy="0 0 0" />
+    <parent link="base_footprint"/>
+    <child link="base_link" />
+  </joint>
 
   <link name="base_link">
     <inertial>

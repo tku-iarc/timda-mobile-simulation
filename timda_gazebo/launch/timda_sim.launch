@@ -14,7 +14,7 @@
     <!-- <remap from="tf" to="gazebo_tf" /> -->
   </include>
 
-  <param name="robot_description" command="$(find xacro)/xacro $(find timda_description)/urdf/timda_mobile_platform.urdf.xacro" />
+  <param name="robot_description" command="$(find xacro)/xacro $(find timda_description)/urdf/timda_mobile_platform_sim_odom.urdf.xacro" />
   <node name="spawn_model"
         pkg="gazebo_ros"
         type="spawn_model"
