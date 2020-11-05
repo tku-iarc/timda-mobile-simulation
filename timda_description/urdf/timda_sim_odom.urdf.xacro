@@ -14,12 +14,13 @@
     <origin
       xyz="0.047646 0.0 0.3"
       rpy="0 0 0" />
-    <parent link="mobile_base_link"/>
-    <child link="base_link"/>
+    <parent link="base_link"/> <!--mobile platform-->
+    <child link="body_base_link"/>
   </joint>
 
-  <xacro:timda_mobile_platform prefix="mobile_"/>
-  <xacro:single_arm side="r"  parent="slide_right">
+  <xacro:timda_mobile_platform prefix=""/>
+  <xacro:timda_body prefix="body_"/>
+  <xacro:single_arm side="r"  parent="body_slide_right">
     <origin xyz="0.0 0.1151 0.0" rpy="1.57 3.1415926 3.1415926" />
   </xacro:single_arm>
 
@@ -27,7 +28,7 @@
     <origin xyz="0 -0.016 0" rpy="0 0 -1.57" />
   </xacro:suction> -->
 
-  <xacro:single_arm side="l"  parent="slide_left">
+  <xacro:single_arm side="l"  parent="body_slide_left">
     <origin xyz="0.0 0.1151 0.0" rpy="-1.57 0 0" />
   </xacro:single_arm>
 
