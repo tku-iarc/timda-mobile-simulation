@@ -82,9 +82,6 @@
   <gazebo reference="${side}_joint_6">
     <implicitSpringDamper>True</implicitSpringDamper>
   </gazebo>
-  <gazebo reference="${side}_joint_7">
-    <implicitSpringDamper>True</implicitSpringDamper>
-  </gazebo>
 
   <!-- <gazebo reference="${side}_Link_7">
     <mu1>0.2</mu1>

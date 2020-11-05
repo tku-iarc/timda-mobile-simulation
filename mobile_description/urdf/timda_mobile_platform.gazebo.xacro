@@ -15,6 +15,8 @@
     </gazebo>
 
     <gazebo reference="${prefix}base_link">
+      <mu1>0.0</mu1>
+      <mu2>0.0</mu2>
       <material>Gazebo/DarkGrey</material>
     </gazebo>
   </xacro:macro>
