@@ -8,7 +8,7 @@
   <!-- Constants for robot dimensions -->
 
 
-  <xacro:macro name="single_arm" params="side parent child toolrot *origin">
+  <xacro:macro name="single_arm" params="side parent *origin">
   
 	  <link
 	    name="${side}_Base">
@@ -423,15 +423,12 @@
 	      </geometry>
 	    </collision>
 	  </link> -->
-		<joint
+		<!-- <joint
 			name="${side}_joint_7"
 			type="revolute">
 			<origin
 				xyz="0 0.03680 0.135"
 				rpy="0 0 ${toolrot}" />
-				<!-- rpy="1.5708 ${toolrot} 0" /> -->
-				<!-- xyz="-0.008041 0.038 0.13545" -->
-				<!-- xyz="-0.0025 0.038 0.135" -->
 			<parent
 				link="${side}_Link_6" />
 			<child
@@ -444,7 +441,7 @@
 				effort="1000"
                 velocity="6.5" />
           <dynamics damping="0.7"/>
-		</joint>
+		</joint> -->
 		
           <!--
 	  <link

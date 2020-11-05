@@ -29,14 +29,14 @@ mobile_dual_arm:
     type: effort_controllers/JointPositionController
     joint: r_joint_6
     pid: {p: 600.0, i: 0.1, d: 40.0}
-  r_joint7_position:
-    type: effort_controllers/JointPositionController
-    joint: r_joint_7
-    pid: {p: 600.0, i: 0.1, d: 40.0}
-  r_suction_joint_position:
-    type: effort_controllers/JointPositionController
-    joint: r_tool_joint
-    pid: {p: 600.0, i: 0.1, d: 40.0}
+  # r_joint7_position:
+  #   type: effort_controllers/JointPositionController
+  #   joint: r_joint_7
+  #   pid: {p: 600.0, i: 0.1, d: 40.0}
+  # r_suction_joint_position:
+  #   type: effort_controllers/JointPositionController
+  #   joint: r_tool_joint
+  #   pid: {p: 600.0, i: 0.1, d: 40.0}
 
 
   l_joint1_position:
@@ -63,14 +63,14 @@ mobile_dual_arm:
     type: effort_controllers/JointPositionController
     joint: l_joint_6
     pid: {p: 600.0, i: 0.1, d: 40.0}
-  l_joint7_position:
-    type: effort_controllers/JointPositionController
-    joint: l_joint_7
-    pid: {p: 600.0, i: 0.1, d: 40.0}
-  l_suction_joint_position:
-    type: effort_controllers/JointPositionController
-    joint: l_tool_joint
-    pid: {p: 600.0, i: 0.1, d: 40.0}
+  # l_joint7_position:
+  #   type: effort_controllers/JointPositionController
+  #   joint: l_joint_7
+  #   pid: {p: 600.0, i: 0.1, d: 40.0}
+  # l_suction_joint_position:
+  #   type: effort_controllers/JointPositionController
+  #   joint: l_tool_joint
+  #   pid: {p: 600.0, i: 0.1, d: 40.0}
 
 
   r_slide_position:

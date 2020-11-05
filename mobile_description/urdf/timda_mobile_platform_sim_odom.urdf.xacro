@@ -25,7 +25,7 @@
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0" />
         <geometry>
-          <box size="0.001 0.001 0.001" />
+          <box size="0.01 0.01 0.01" />
         </geometry>
       </visual>
     </link>
@@ -72,6 +72,14 @@
           <mesh
             filename="package://mobile_description/meshes/base_link.STL" />
         </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>0.0</mu>
+              <mu2>0.0</mu2>
+            </ode>
+          </friction>
+        </surface>
       </collision>
     </link>
 
