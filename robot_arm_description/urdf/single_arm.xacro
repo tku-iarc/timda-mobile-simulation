@@ -2,9 +2,9 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
 
-  <xacro:include filename="$(find single_arm_description)/urdf/single_arm.transmission.xacro" />
-  <xacro:include filename="$(find single_arm_description)/urdf/single_arm.gazebo.xacro" />
-  <xacro:include filename="$(find single_arm_description)/urdf/materials.xacro" />
+  <xacro:include filename="$(find robot_arm_description)/urdf/single_arm.transmission.xacro" />
+  <xacro:include filename="$(find robot_arm_description)/urdf/single_arm.gazebo.xacro" />
+  <xacro:include filename="$(find robot_arm_description)/urdf/materials.xacro" />
   <!-- Constants for robot dimensions -->
 
 
@@ -28,7 +28,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Base.STL" />
+		  filename="package://robot_arm_description/meshes/Base.STL" />
 	      </geometry>
 	      <material
 		name="">
@@ -42,7 +42,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Base.STL" />
+		  filename="package://robot_arm_description/meshes/Base.STL" />
 	      </geometry>
 	    </collision>
 	  </link>
@@ -71,7 +71,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_1.STL" />
+			filename="package://robot_arm_description/meshes/Link_1.STL" />
 	      </geometry>
 	      <material
 		name="">
@@ -85,7 +85,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_1.STL" />
+		  filename="package://robot_arm_description/meshes/Link_1.STL" />
 	      </geometry>
 	    </collision>
 	  </link>
@@ -126,7 +126,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_2.STL" />
+		  filename="package://robot_arm_description/meshes/Link_2.STL" />
 	      </geometry>
 	      <material
 		name="">
@@ -140,7 +140,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_2.STL" />
+		  filename="package://robot_arm_description/meshes/Link_2.STL" />
 	      </geometry>
 	    </collision>
 	  </link>
@@ -181,7 +181,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_3.STL" />
+		  filename="package://robot_arm_description/meshes/Link_3.STL" />
 	      </geometry>
 	      <material
 		name="">
@@ -195,7 +195,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_3.STL" />
+		  filename="package://robot_arm_description/meshes/Link_3.STL" />
 	      </geometry>
 	    </collision>
 	  </link>
@@ -236,7 +236,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_4.STL" />
+		  filename="package://robot_arm_description/meshes/Link_4.STL" />
 	      </geometry>
 	      <material
 		name="">
@@ -250,7 +250,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_4.STL" />
+		  filename="package://robot_arm_description/meshes/Link_4.STL" />
 	      </geometry>
 	    </collision>
 	  </link>
@@ -291,7 +291,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_5.STL" />
+		  filename="package://robot_arm_description/meshes/Link_5.STL" />
 	      </geometry>
 	      <material
 		name="">
@@ -305,7 +305,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_5.STL" />
+		  filename="package://robot_arm_description/meshes/Link_5.STL" />
 	      </geometry>
 	    </collision>
 	  </link>
@@ -346,7 +346,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_6.STL" />
+		  filename="package://robot_arm_description/meshes/Link_6.STL" />
 	      </geometry>
 	      <material
 		name="">
@@ -360,7 +360,7 @@
 		rpy="0 0 0" />
 	      <geometry>
 		<mesh
-		  filename="package://single_arm_description/meshes/Link_6.STL" />
+		  filename="package://robot_arm_description/meshes/Link_6.STL" />
 	      </geometry>
 	    </collision>
 	  </link>
